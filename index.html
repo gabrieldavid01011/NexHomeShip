@@ -1,0 +1,226 @@
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NexHomeShip - Smart Living</title>
+<style>
+:root {
+--navy: #0A192F;
+--cyan: #00FFFF;
+--white: #FFFFFF;
+--gray: #F4F4F9;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+background-color: var(--white);
+color: var(--navy);
+}
+
+/ Header /
+header {
+background-color: var(--navy);
+padding: 1rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+color: var(--cyan);
+font-size: 1.5rem;
+font-weight: bold;
+letter-spacing: 1px;
+}
+
+nav a {
+color: var(--white);
+text-decoration: none;
+margin-left: 20px;
+font-size: 0.9rem;
+}
+
+nav a:hover {
+color: var(--cyan);
+}
+
+/ Hero Section /
+.hero {
+background-color: var(--navy);
+color: var(--white);
+text-align: center;
+padding: 4rem 1rem;
+}
+
+.hero h1 {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+
+.hero span {
+color: var(--cyan);
+}
+
+.cta-button {
+background-color: var(--cyan);
+color: var(--navy);
+padding: 12px 24px;
+text-decoration: none;
+font-weight: bold;
+border-radius: 5px;
+display: inline-block;
+margin-top: 1rem;
+transition: transform 0.2s;
+}
+
+.cta-button:hover {
+transform: scale(1.05);
+background-color: #fff;
+}
+
+/ Products Grid /
+.products {
+padding: 3rem 2rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.section-title {
+text-align: center;
+margin-bottom: 2rem;
+font-size: 2rem;
+}
+
+.product-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 2rem;
+}
+
+.product-card {
+border: 1px solid #eee;
+border-radius: 10px;
+overflow: hidden;
+transition: box-shadow 0.3s;
+background: var(--white);
+}
+
+.product-card:hover {
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-image {
+background-color: var(--gray);
+height: 200px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #888;
+}
+
+.product-info {
+padding: 1.5rem;
+}
+
+.product-title {
+font-size: 1.1rem;
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+.product-price {
+color: var(--navy);
+font-weight: bold;
+font-size: 1.2rem;
+}
+
+.buy-btn {
+display: block;
+width: 100%;
+padding: 10px;
+background-color: var(--navy);
+color: var(--white);
+text-align: center;
+text-decoration: none;
+margin-top: 1rem;
+border-radius: 5px;
+}
+
+.buy-btn:hover {
+background-color: var(--cyan);
+color: var(--navy);
+}
+
+/ Footer */
+footer {
+background-color: var(--navy);
+color: var(--white);
+text-align: center;
+padding: 2rem;
+margin-top: 3rem;
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">NexHome AI</div>
+<nav>
+<a href="#">Home</a>
+<a href="#">Products</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Living Smarter, <span>One Device</span> at a Time.</h1>
+<p>Discover AI-powered gadgets that automate your home and save you time.</p>
+<a href="#products" class="cta-button">Shop Now</a>
+</section>
+
+<section id="products" class="products">
+<h2 class="section-title">Featured Gadgets</h2>
+<div class="product-grid">
+<!-- Product 1 -->
+<div class="product-card">
+<div class="product-image">[Image: AI Plant Sensor]</div>
+<div class="product-info">
+<div class="product-title">Smart AI Plant Care Sensor</div>
+<div class="product-price">$29.99</div>
+<p>Never kill a plant again with AI-driven care tips.</p>
+<a href="#" class="buy-btn">Add to Cart</a>
+</div>
+</div>
+
+<!-- Product 2 -->
+<div class="product-card">
+<div class="product-image">[Image: Smart Lock]</div>
+<div class="product-info">
+<div class="product-title">NexLock AI Entry</div>
+<div class="product-price">$89.99</div>
+<p>Face recognition and auto-lock technology.</p>
+<a href="#" class="buy-btn">Add to Cart</a>
+</div>
+</div>
+
+<!-- Product 3 -->
+<div class="product-card">
+<div class="product-image">[Image: Robot Vacuum]</div>
+<div class="product-info">
+<div class="product-title">AutoClean AI Vacuum</div>
+<div class="product-price">$149.99</div>
+<p>Smart mapping and obstacle avoidance.</p>
+<a href="#" class="buy-btn">Add to Cart</a>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2
